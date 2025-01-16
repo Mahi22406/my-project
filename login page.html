@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(nature.png) ;
+            /* background-repeat: no-repeat; */
+            /* background-repeat: none; */
+            /* width: 500px; */
+            /* height: 50%; */
+            background-position: center;
+            background-size: cover;
+            /* margin: auto; */
+            height: 98vh;
+        }
+        .form{
+            /* display: flex; */
+            flex-direction: row;
+            border: 2px solid violet;
+            padding: 10px;
+            height: 200px;
+            width: 200px;
+            /* justify-content: center; */
+            /* align-items: center; */
+            margin: 500px ;
+            margin-top: 150px;
+            margin-bottom: 100px;
+            /* background-image: url(satelite.png ); */
+            background: transparent;
+            border-radius: 10px;
+            box-shadow: 2px 1px 3px 1px;
+            /* border: transparent; */
+            border: none;
+            backdrop-filter: blur(5px);
+            
+            
+           
+        }
+        .mail:hover{
+background-color: aqua;
+border-radius: 2px;
+cursor: pointer;
+font-size: small;
+
+        }
+        .pass:hover{
+background-color: aquamarine;
+        }
+        .forget{
+            text-decoration: none;
+            font-weight: bold;
+            color: aliceblue;
+        }
+        .remember{
+            display: flex;
+        }
+        .rem{
+            color: rgb(21, 41, 195);
+        }
+        .btn{
+            color: brown;
+            border-radius: 5px;
+            background-color: aquamarine;
+            cursor: pointer;
+            
+        }
+        @media screen and (max-width:576px) {
+            .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(nature.png) ;
+            /* background-repeat: no-repeat; */
+            /* background-repeat: none; */
+            /* width: 500px; */
+            /* height: 50%; */
+            background-position: center;
+            background-size: cover;
+            /* margin: auto; */
+            height: 98vh;
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <input class="mail" type="email" name="" id="" placeholder="Your Email" required>
+        <p><input class="pass" type="password" name="" id="" placeholder="Password" required></p>
+        <div class="remember"><input type="checkbox" name="" id=""><p class="rem">Rmember me</p> </div>
+       <p> <a class="forget" href="">Forget Password</a></p>
+        
+        <p><input class="btn" type="submit" value="Login"></p>
+        </div>
+    </div>
+    
+</body>
+</html>
